@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Helvetica Neue' sans-serif;
+    line-height: 1.5;
+    background-color: lavender;
+    color: rgb(133, 0, 221);
+}
+
+.site-header{
+    background-color: rgba(137, 43, 226, 0.349);
+    color: aliceblue;
+    padding: 1rem 0;
+    text-align: center;
+}
