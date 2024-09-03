@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semântico</title>
     <link rel="stylesheet" href="css/global.css">
 </head>
+
 <body>
     <header class="site-header">
         <h1>Home</h1>
         <nav class="main-nav">
             <ul class="nav-list">
-                <li class="nav-list"><a href="index.html">Home</a></li>
-                <li class="nav-list"><a href="./pages/sobre.html">Sobre</a></li>
-                <li class="nav-list"><a href="./pages/contato.html">Contato</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./pages/sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="./pages/contato.html" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </header>
+
+    <main class="main-content">
+        <article class="article">
+
+            <header class="article-header">
+                <h2 class="article-tittle">Bem-vindo ao meu site</h2>
+                <p class="section-text">aleatório ma aula de marcação web</p>
+            </header>
+
+            <section class="article-content">
+                <h3 class="section-tittle">Introdução</h3>
+                <p class="section-text">Este conteúdo é introdutório do artigo</p>
+                <figure class="image-figure">
+                    <img src="img/totoro.jpg" alt="totoro" class="article-image">
+                    <figcaption class="image-caption">Totoro</figcaption>
+                </figure>
+                <audio controls class="audio-player">
+                    <source src="media/audio.mp3" type="audio/mp3">Seu navegador não suporta a tag audio
+                </audio>
+            </section>
+
+            <footer class="article-footer">
+                <p class="section-text">Testando rodapé do conteúdo principal</p>
+            </footer>
+
+        </article>
+
+        <aside class="sidebar">
+            <h2 class="sidebar-tittle">Informações adicionais</h2>
+            <p class="sidebar-text">Este é um conteúdo complementar</p>
+        </aside>
+
+    </main>
+
+    <footer class="site-footer">
+        <address class="contact-infro">
+            <p class="author-name">Autor: Laura Violla</p>
+            <p class="author-email">Email: <a href="mailto:laura.violla@aluno.senai.br" class="email-link">laura.violla@aluno.senai.br</a></p>
+            <p class="footer-copy">&copy; 2024 Meu Site. Todos os direitos reservados</p>
+        </address>
+    </footer>
+
 </body>
 </html>
