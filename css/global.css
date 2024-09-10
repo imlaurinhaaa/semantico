@@ -1,53 +1,73 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gaegu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gaegu&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Helvetica Neue' sans-serif;
+body {
+    font-family: "Helvetica Neue" sans-serif;
     line-height: 1.5;
     background-color: rgb(242, 228, 252);
     color: rgb(0, 0, 0);
 }
 
-.site-header{
+.gaegu-regular {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.site-header {
     background-color: rgba(137, 43, 226, 0.349);
     color: aliceblue;
     padding: 1rem 0;
     text-align: center;
+    font-family: "Gaegu", sans-serif;
+    font-size: x-large;
 }
 
-.site-title{
+.site-title {
     margin-bottom: 10px;
     font-size: 2rem;
+    font-family: "Gaegu", sans-serif;
+    font-size: x-large;
 }
 
 .main-nav,
-.nav-list{
+.nav-list {
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-.main-nav{
+.main-nav {
     margin: 0 15px;
 }
 
 .main-nav,
-.nav-link{
+.nav-link {
     color: rgb(133, 0, 221);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    margin: 5px;
 }
 
 .main-nav,
-.nav-link:hover{
+.nav-link:hover {
     color: rgb(255, 255, 255);
 }
 
-.main-content{
+.main-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -56,7 +76,7 @@ body{
     padding: 0 20px;
 }
 
-.article{
+.article {
     flex: 3;
     background-color: aliceblue;
     padding: 20px;
@@ -65,79 +85,110 @@ body{
     border-radius: 5px;
 }
 
-.article-header{
+.article-header {
     border-bottom: 2px solid rgba(182, 122, 238, 0.767);
     margin-bottom: 15px;
     padding-bottom: 10px;
 }
 
-.article-title{
-    color:rgb(133, 0, 221);
+.article-title {
+    color: rgb(133, 0, 221);
     font-size: 1.5rem;
     margin-bottom: 20px;
+    font-family: "Gaegu", sans-serif;
+    font-size: x-large;
 }
 
-.article-meta{
+.article-meta {
     color: rgb(133, 0, 221);
     font-size: 0.9rem;
 }
 
-.article-section{
+.article-section {
     margin-bottom: 20px;
 }
 
-.section-title{
+.section-title {
     font-size: 1.4rem;
     color: rgb(133, 0, 221);
     margin-bottom: 10px;
+    font-family: "Gaegu", sans-serif;
+    font-size: x-large;
 }
 
-.section-text{
+.section-text {
     margin-bottom: 15px;
     color: rgb(0, 0, 0);
-    line-height: 1.0;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
 }
 
-.image-figure{
+.image-figure {
     margin-top: 20px 0;
 }
 
-.article-image{
+.article-image {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.image-caption{
+.image-caption {
     text-align: center;
-    font-size: 0.10rem;
+    font-size: 0.1rem;
     color: rgb(133, 0, 221);
     margin-top: 5px;
 }
 
-.sidebar{
+.sidebar {
     flex: 1;
-    background-color: aliceblue;
+    background-color: rgba(219, 180, 255, 0.699);
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
-.sidebar-title{
+.sidebar-title {
     font-size: 1.6rem;
     color: rgb(133, 0, 221);
     margin-bottom: 10px;
+    font-family: "Gaegu", sans-serif;
 }
 
-.sidebar-text{
+.sidebar-text {
     color: rgb(0, 0, 0);
     line-height: 1.5;
+    font-family: "Poppins", sans-serif;
 }
 
-.site-footer{
+.site-footer {
     background-color: rgba(137, 43, 226, 0.349);
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.author-name,
+.author-email {
+    margin-bottom: 5px;
+}
+
+.email-link {
+    color: rgb(133, 0, 221);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.email-link:hover {
+    color: #fff;
+}
+
+.footer-copy {
+    font-size: 0.9em;
+    color: #ccc;
 }
